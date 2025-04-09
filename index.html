@@ -23,6 +23,7 @@
     <header id="header">
       <h1>Yussif Ibrahim-Anyass</h1>
       <p>Email: <a href="mailto:iayussif99@gmail.com">iayussif99@gmail.com</a></p>
+      <p> Data Analyst- Afri-SET West Project</p>
       <p>Department of Physics<br>University of Ghana</p>
       
       <nav class="main-menu">
@@ -33,7 +34,21 @@
           <li><a href="#presentations">Presentations</a></li>
           <li><a href="#cv">CV</a></li> <!-- Added CV link -->
         </ul>
-      </nav>                 
+      </nav>
+                     
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ibrahim-anyass-yussif-6a72261a3/" target="_blank">LinkedIn</a>
+        <a href="https://orcid.org/0009-0008-1550-5200" target="_blank">ORCID</a>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button id="toggle-theme">Toggle Dark/Light Mode</button>
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
     </header>
    
     <div id="container">
@@ -94,6 +109,12 @@
     </footer>
     
     <script type="text/javascript" src="script.js"></script>
-    
+    <script>
+      // Dark/Light Mode Toggle Script
+      const toggleButton = document.getElementById('toggle-theme');
+      toggleButton.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+      });
+    </script>
   </body>
 </html>
